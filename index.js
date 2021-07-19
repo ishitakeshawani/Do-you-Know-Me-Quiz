@@ -6,7 +6,7 @@ console.log("\n");
 console.log("welcome "+ username + " to DO YOU KNOW Ishita? \n");
 
 
-function play(question,answer,option){
+function play(question,answer){
   var userAnswer = readlinesync.question(question);
  
   if(userAnswer == answer){
@@ -38,7 +38,7 @@ var questions = [
 
 for(var i=0;i<questions.length;i++){
   var cQues = questions[i];
-  play(cQues.question,cQues.answer,cQues.option); 
+  play(cQues.question,cQues.answer); 
 }
 
 console.log("yehh! You Scored:  ",score);
